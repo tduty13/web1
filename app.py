@@ -28,5 +28,5 @@ if st.button('Рассчитать модуль упругости при рас
     input_data=np.array([mat_F_rat, dens,elast_mod,cur_ag_quan,ep_gr_con,fl_po_temp,res_cons,l_step,sur_dens,l_dens,layup_0,layup_90]).reshape(1, -1)
 
     prediction=model.predict(input_data)[0]
-    st.success(f'Прогнозируемый модуль упругости при растяжении: {prediction: .10f}')
+    st.success(f'Прогнозируемый модуль упругости при растяжении: {prediction: .10f}  гПа')
     
